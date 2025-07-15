@@ -194,9 +194,7 @@ For more information, refer to: link:../trident-reco/security-reco.html[How Trid
 
 *If specified, set to `true` for ASA r2*.
 
-|`luksEncryption` | Enable LUKS encryption. Refer to link:../trident-reco/security-luks.html[Use Linux Unified Key Setup (LUKS)]. 
-
-LUKS encryption is not supported for NVMe/TCP.| ""
+|`luksEncryption` | Enable LUKS encryption. Refer to link:../trident-reco/security-luks.html[Use Linux Unified Key Setup (LUKS)]. | ""
 Set to `false` for ASA r2.
 
 |`tieringPolicy` |Tiering policy to use	"none" 

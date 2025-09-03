@@ -158,10 +158,11 @@ include::../_include/backup-include-sessiontoken-note.adoc[]
 * *spec.backupRetention*: The number of backups to retain. Zero indicates that no backups should be created.
 * *spec.snapshotRetention*: The number of snapshots to retain. Zero indicates that no snapshots should be created.
 * *spec.granularity*: The frequency at which the schedule should run. Possible values, along with required associated fields:
-** `hourly` (requires that you specify `spec.minute`)
-** `daily` (requires that you specify `spec.minute` and `spec.hour`)
-** `weekly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfWeek`)
-** `monthly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfMonth`)
+** `Hourly` (requires that you specify `spec.minute`)
+** `Daily` (requires that you specify `spec.minute` and `spec.hour`)
+** `Weekly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfWeek`)
+** `Monthly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfMonth`)
+** `Custom`
 * *spec.dayOfMonth*: (_Optional_) The day of the month (1 - 31) that the schedule should run. This field is required if the granularity is set to `monthly`.
 * *spec.dayOfWeek*: (_Optional_) The day of the week (0 - 7) that the schedule should run. Values of 0 or 7 indicate Sunday. This field is required if the granularity is set to `weekly`.
 * *spec.hour*: (_Optional_) The hour of the day (0 - 23) that the schedule should run. This field is required if the granularity is set to `daily`, `weekly`, or `monthly`.

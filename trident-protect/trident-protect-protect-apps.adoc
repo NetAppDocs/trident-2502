@@ -163,10 +163,10 @@ include::../_include/backup-include-sessiontoken-note.adoc[]
 ** `Weekly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfWeek`)
 ** `Monthly` (requires that you specify `spec.minute, spec.hour`, and `spec.dayOfMonth`)
 ** `Custom`
-* *spec.dayOfMonth*: (_Optional_) The day of the month (1 - 31) that the schedule should run. This field is required if the granularity is set to `monthly`.
-* *spec.dayOfWeek*: (_Optional_) The day of the week (0 - 7) that the schedule should run. Values of 0 or 7 indicate Sunday. This field is required if the granularity is set to `weekly`.
-* *spec.hour*: (_Optional_) The hour of the day (0 - 23) that the schedule should run. This field is required if the granularity is set to `daily`, `weekly`, or `monthly`.
-* *spec.minute*: (_Optional_) The minute of the hour (0 - 59) that the schedule should run. This field is required if the granularity is set to `hourly`, `daily`, `weekly`, or `monthly`.
+* *spec.dayOfMonth*: (_Optional_) The day of the month (1 - 31) that the schedule should run. This field is required if the granularity is set to `Monthly`.
+* *spec.dayOfWeek*: (_Optional_) The day of the week (0 - 7) that the schedule should run. Values of 0 or 7 indicate Sunday. This field is required if the granularity is set to `Weekly`.
+* *spec.hour*: (_Optional_) The hour of the day (0 - 23) that the schedule should run. This field is required if the granularity is set to `Daily`, `Weekly`, or `Monthly`.
+* *spec.minute*: (_Optional_) The minute of the hour (0 - 59) that the schedule should run. This field is required if the granularity is set to `Hourly`, `Daily`, `Weekly`, or `Monthly`.
 +
 [source,yaml]
 ----
@@ -182,7 +182,7 @@ spec:
   appVaultRef: appvault-name
   backupRetention: "15"
   snapshotRetention: "15"
-  granularity: <monthly>
+  granularity: <Monthly>
   dayOfMonth: "1"
   dayOfWeek: "0"
   hour: "0"

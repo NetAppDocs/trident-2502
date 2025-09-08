@@ -182,7 +182,7 @@ spec:
   appVaultRef: appvault-name
   backupRetention: "15"
   snapshotRetention: "15"
-  granularity: <Monthly>
+  granularity: Monthly
   dayOfMonth: "1"
   dayOfWeek: "0"
   hour: "0"

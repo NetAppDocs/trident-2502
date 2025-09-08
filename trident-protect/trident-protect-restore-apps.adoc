@@ -58,7 +58,7 @@ metadata:
   name: my-cr-name
   namespace: my-destination-namespace
   annotations: # Optional annotations for Kopia data mover
-    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: 1000
+    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: "1000"
 spec:
   appArchivePath: my-backup-path
   appVaultRef: appvault-name
@@ -130,7 +130,7 @@ metadata:
   name: my-cr-name
   namespace: my-app-namespace
   annotations: # Optional annotations for Kopia data mover
-    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: 1000
+    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: "1000"
 spec:
   appArchivePath: my-backup-path
   appVaultRef: appvault-name
@@ -242,7 +242,7 @@ metadata:
   name: my-cr-name
   namespace: my-destination-namespace
   annotations: # Optional annotations for Kopia data mover
-    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: 1000
+    protect.trident.netapp.io/kopia-content-cache-size-limit-mb: "1000"
 spec:
   appVaultRef: appvault-name
   appArchivePath: my-backup-path

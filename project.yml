@@ -33,10 +33,7 @@ settings:
       url: /trident-2304      
     - version-number: "23.01"
       url: /trident-2301      
-    - version-number: "22.10"
-      url: /trident-2210      
-
-                        
+                             
 sidebar:
   entries:
     - title: Trident docs

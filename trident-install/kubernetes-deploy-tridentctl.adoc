@@ -165,7 +165,7 @@ tridentctl install --windows -n trident
 .Force detach
 [%collapsible%closed]
 ====
-For more information about force detach, refer to link:trident-install/kubernetes-customize-deploy.html[Customize Trident operator installation].
+For more information about force detach, refer to link:kubernetes-customize-deploy.html[Customize Trident operator installation].
 ----
 tridentctl install --enable-force-detach=true -n trident
 ----
